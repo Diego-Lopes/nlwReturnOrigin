@@ -11,12 +11,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/styles.css" />
+  <link rel="stylesheet" href="/styles/stylesNav.css" />
 
   <title>DoctorCare</title>
 </head>
 
 <body>
-  <header>
+  <nav class="wrapper">
+    <a href="#">
+      <img src="/assets/Logo.svg"
+        alt="Logo da empresa escrito em dois tons de cores um verde claro e outro verde escuro, nome da logo é DoctorCare">
+    </a>
+
+    <img src="/assets/IconBar.svg" alt="icone de menu mobile.">
+  </nav>
+
+
+  <header class="wrapper">
     <h4 class="welcome">BOAS-VINDAS A DOCTORCARE 👋</h4>
     <h1 class="title">Assistência médica simplificada para todos</h1>
     <p class="description">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e
@@ -30,14 +41,25 @@
           fill="white" />
       </svg>Agende sua consulta
     </button>
-    <img src="/assets/mulher.png" alt="mulher negra sorrindo, com as mãos sobre o coração." />
+    <img class="img" src="/assets/mulher.png" alt="mulher negra sorrindo, com as mãos sobre o coração." />
 
-    <h3>+3.500</h3>
-    <p>Pacientes atendidos</p>
-    <h3>+15</h3>
-    <p>Especialistas disponíveis</p>
-    <h3>+10</h3>
-    <p>Anos no mercado</p>
+
+    <div class="stats">
+      <div class="stat">
+        <h3>+3.500</h3>
+        <p>Pacientes atendidos</p>
+      </div>
+
+      <div class="stat">
+        <h3>+15</h3>
+        <p>Especialistas disponíveis</p>
+      </div>
+
+      <div class="stat">
+        <h3>+10</h3>
+        <p>Anos no mercado</p>
+      </div>
+    </div>
   </header>
 </body>
 

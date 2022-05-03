@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  height: var(--navHeight);
+  /* padding: 2.4rem 1.6rem; */
+
+  position: fixed;
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%)
+}
