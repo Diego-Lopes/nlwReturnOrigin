@@ -16,14 +16,28 @@
   --navHeight: 7.2rem;
 }
 
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
 .wrapper {
   width: 37.5rem;
   margin-inline: auto;
+  padding-inline: 2.4rem;
 }
 
 body {
   font-family: 'DM Sans', sans-serif;
   text-align: center;
+
+  overflow: overlay;
+  /*faz deixar o conteudo sobreposto, não faz a soma. */
 }
 
 header {
@@ -32,8 +46,8 @@ header {
 
 header::before {
   content: "";
-  width: 100vw;
-  height: 108rem;
+  width: 100%;
+  height: calc(108rem + var(--navHeight));
   background-color: var(--breandLight);
   display: inline-block;
 
@@ -70,7 +84,7 @@ header::before {
   display: inline-block;
 }
 
-.button {
+button.button {
   display: flex;
   align-items: center;
   justify-content: center;
