@@ -11,7 +11,9 @@
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brandBeige: hsl(39, 100%, 97%);
+
   --brandLight: hsl(148, 23%, 89%);
+
   --bg-light: hsl(180, 14%, 97%);
 
   --navHeight: 7.2rem;
@@ -58,7 +60,7 @@ body {
   content: "";
   width: 100%;
   height: calc(108rem + var(--navHeight));
-  background-color: var(--brendLight);
+  background-color: var(--brandLight);
   display: inline-block;
 
   position: absolute;
