@@ -12,6 +12,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles/styles.css" />
   <link rel="stylesheet" href="/styles/stylesNav.css" />
+  <link rel="stylesheet" href="/styles/stylesService.css" />
 
   <title>DoctorCare</title>
 </head>
@@ -19,7 +20,7 @@
 <body onscroll="onScroll()" class="">
   <nav id="navigation">
     <div class="wrapper">
-      <a href="#" class="logo">
+      <a href="#home" class="logo">
         <svg width="133" height="18" viewBox="0 0 133 18" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M0 17.088V0.287999H5.16C8.12 0.287999 10.296 1.04 11.688 2.544C13.096 4.048 13.8 6.112 13.8 8.736C13.8 11.312 13.096 13.352 11.688 14.856C10.296 16.344 8.12 17.088 5.16 17.088H0ZM2.016 15.408H5.112C6.744 15.408 8.04 15.144 9 14.616C9.976 14.072 10.672 13.304 11.088 12.312C11.504 11.304 11.712 10.112 11.712 8.736C11.712 7.328 11.504 6.12 11.088 5.112C10.672 4.104 9.976 3.328 9 2.784C8.04 2.24 6.744 1.968 5.112 1.968H2.016V15.408Z"
@@ -56,9 +57,9 @@
 
       <div class="menu">
         <ul>
-          <li><a href="#">Início</a></li>
+          <li><a onclick="closeMenu()" href="#home">Início</a></li>
           <li><a href="#">Sobre</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
         </ul>
         <a href="#" class="button">Agende sua consulta</a>
         <ul class="social-links">
@@ -120,7 +121,7 @@
   </nav>
 
 
-  <header class="wrapper">
+  <header id="home" class="wrapper">
     <h4 class="welcome">BOAS-VINDAS A DOCTORCARE 👋</h4>
     <h1 class="title">Assistência médica simplificada para todos</h1>
     <p class="description">Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e
@@ -154,6 +155,69 @@
       </div>
     </div>
   </header>
+
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4>Serviços</h4>
+        <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+      </header>
+
+      <div class="cards">
+
+        <div class="card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <h3>Problemas digestivos</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <h3>Saúde Hormonal</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <h3>Bem-estar mental</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+
+        <div class="card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="12" fill="#DCE9E2" />
+            <path d="M17.091 8.18182L10.091 15.1818L6.90918 12" stroke="#00856F" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+
+          <h3>Cuidados Pediátricos</h3>
+          <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+            enim.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+
   <script src="/script/main.js"></script>
 
 </body>

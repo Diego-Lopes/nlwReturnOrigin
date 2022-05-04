@@ -11,15 +11,24 @@
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brandBeige: hsl(39, 100%, 97%);
-  --breandLight: hsl(148, 23%, 89%);
+  --brandLight: hsl(148, 23%, 89%);
+  --bg-light: hsl(180, 14%, 97%);
 
   --navHeight: 7.2rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body,
 html {
   width: 100%;
   height: 100%;
+}
+
+section {
+  padding-block: 10rem;
 }
 
 ul {
@@ -38,17 +47,18 @@ body {
 
   overflow: overlay;
   /*faz deixar o conteudo sobreposto, não faz a soma. */
+  background-color: var(--bg-light);
 }
 
-header {
-  margin-top: calc(4.1rem + var(--navHeight));
+#home {
+  padding-top: calc(4.1rem + var(--navHeight));
 }
 
-header::before {
+#home::before {
   content: "";
   width: 100%;
   height: calc(108rem + var(--navHeight));
-  background-color: var(--breandLight);
+  background-color: var(--brendLight);
   display: inline-block;
 
   position: absolute;
@@ -59,7 +69,7 @@ header::before {
   z-index: -1;
 }
 
-.welcome {
+#home .welcome {
   font-size: 1.4rem;
   color: var(--primaryColor);
   margin-bottom: 1.6rem;
@@ -67,14 +77,14 @@ header::before {
 }
 
 
-.title {
+#home .title {
   font-size: 3.4rem;
   color: var(--headline);
   line-height: 130%;
   margin-bottom: 2.4rem;
 }
 
-.description {
+#home .description {
   font-size: 1.8rem;
   line-height: 150%;
   color: var(--paragraph);
@@ -84,7 +94,7 @@ header::before {
   display: inline-block;
 }
 
-button.button {
+#home button.button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +114,7 @@ button.button {
   font-size: 1.4rem;
 }
 
-.img {
+#home .img {
   width: 26.4rem;
   display: block;
   margin-inline: auto;
@@ -118,7 +128,7 @@ button.button {
   /* trabalha o eixo y */
 
   background-color: var(--brandBeige);
-  border: 1px solid var(--breandLight);
+  border: 1px solid var(--brandLight);
   border-radius: .6rem;
 
   display: flex;

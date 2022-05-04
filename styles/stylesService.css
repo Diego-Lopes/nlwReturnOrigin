@@ -1,0 +1,42 @@
+#services header h4 {
+
+  font-size: 1.4rem;
+  line-height: 150%;
+
+  letter-spacing: 0.08rem;
+
+  text-transform: uppercase;
+
+  color: var(--primaryColor);
+  margin-bottom: 1.6rem;
+
+}
+
+#services header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--headline);
+
+  margin-bottom: 6rem;
+}
+
+#services .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#services .card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: #fff;
+
+  border: 1px solid var(--brandLight);
+  border-radius: .6rem;
+}
+
+#services .card h3 {
+  margin-block: 1.6rem;
+}
