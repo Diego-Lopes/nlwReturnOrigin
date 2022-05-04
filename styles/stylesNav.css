@@ -1,13 +1,15 @@
 nav {
   display: flex;
-  width: 100%;
   height: var(--navHeight);
+  width: 100vw;
 
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  /* left: 50%;
+  transform: translateX(-50%); */
   transition: transform 300ms;
+
+  z-index: 100;
 
 }
 
@@ -22,11 +24,10 @@ nav .wrapper {
 }
 
 nav.scroll {
+  /* transition: background-color .9s ease-in-out; */
   background: var(--primaryColor);
-  width: 100vw;
-  position: fixed;
-  top: 0;
-  transition: background-color .9s ease-in-out;
+  /* position: fixed;
+  top: 0; */
 
 }
 
@@ -36,7 +37,7 @@ nav button {
   cursor: pointer;
 }
 
-nav.scroll svg:nth-child(1) path {
+nav.scroll .logo path {
   fill: #fff;
 }
 
@@ -50,7 +51,8 @@ body.menu-expanded {
 
 body.menu-expanded> :not(nav) {
   /* > se chama nível*/
-  display: none;
+  /* display: none; */
+  visibility: hidden;
 }
 
 .menu,
@@ -97,9 +99,23 @@ body.menu-expanded .menu {
   transform: translateY(0);
 }
 
-body.menu-expanded nav {
+
+body.menu-expanded .logo,
+body.menu-expanded button {
   position: relative;
+  z-index: 2;
 }
+
+
+body.menu-expanded .logo path {
+  fill: #fff;
+}
+
+body.menu-expanded nav button path {
+  stroke: #fff;
+}
+
+
 
 .menu ul:first-child {
   display: flex;
@@ -144,19 +160,4 @@ body.menu-expanded nav {
   justify-content: center;
   align-items: center;
   gap: 3.2rem;
-}
-
-body.menu-expanded .logo,
-body.menu-expanded button {
-  position: relative;
-  z-index: 2;
-}
-
-
-body.menu-expanded .logo path {
-  fill: #fff;
-}
-
-body.menu-expanded nav button path {
-  stroke: #fff;
 }

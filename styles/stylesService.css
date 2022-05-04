@@ -13,11 +13,6 @@
 }
 
 #services header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-
-  color: var(--headline);
-
   margin-bottom: 6rem;
 }
 
@@ -39,4 +34,5 @@
 
 #services .card h3 {
   margin-block: 1.6rem;
+  font-size: 2.4rem;
 }
