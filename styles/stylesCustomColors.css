@@ -1,0 +1,33 @@
+#services .card circle {
+  fill: var(--brandLight);
+}
+
+
+
+#backToTopButton circle {
+  fill: var(--primaryColor);
+}
+
+#navigation path[fill*="#00856F"] {
+  fill: var(--primaryColor);
+}
+
+body.menu-expanded #navigation path[fill*="#00856F"] {
+  fill: #fff;
+}
+
+#navigation.scroll .logo path {
+  fill: #fff;
+}
+
+#navigation button path[stroke*="#00856F"] {
+  stroke: var(--primaryColor);
+}
+
+#navigation.scroll button path[stroke*="#00856F"] {
+  stroke: #fff;
+}
+
+#contact li path {
+  stroke: var(--primaryColor);
+}
