@@ -87,9 +87,7 @@ body.menu-expanded .menu {
   height: 100vh;
 
 
-  position: fixed;
-  top: 0;
-  left: 0;
+
   background-color: var(--primaryColor);
   padding-top: var(--navHeight);
 
@@ -98,6 +96,12 @@ body.menu-expanded .menu {
   transform: translateY(0);
 }
 
+nav .menu,
+nav .close-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 body.menu-expanded .logo,
 body.menu-expanded button {
